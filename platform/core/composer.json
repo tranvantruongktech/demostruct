@@ -1,0 +1,29 @@
+{
+    "name": "tcore/platform",
+    "description": "T core is platform base on laravel. It using development all project",
+    "keywords": [
+        "tcore"
+    ],
+    "type": "project",
+    "authors": [
+        {
+            "name": "DevT",
+            "email": "trantruong1797@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TCore\\Base\\": "base/src",
+            "TCore\\DataTable\\": "datatable/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TCore\\Base\\Providers\\BaseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
